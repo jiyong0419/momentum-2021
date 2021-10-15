@@ -1,11 +1,23 @@
-const mon ="mon";
-const tue ="tue";
-const wed ="wed"
-const thu ="thu"
-const fri ="fri"
-const sat ="sat"
-const sun ="sun"
+const calculator = {
+    add:function(a,b) {
+        console.log(a+b);
+    },
+    min:function(a,b) {
+        console.log(a-b);
+    },
+    mul:function(a,b) {
+        console.log(a*b);
+    },
+    div:function(a,b) {
+        console.log(a/b);
+    },
+    squ:function(a,b) {
+        console.log(a**b);
+    }
+}
 
-const daysOfWeek = mon+tue+wed+thu+fri+sat+sun
-
-console.log(daysOfWeek);
+calculator.add(4,2);
+calculator.min(4,2);
+calculator.mul(4,2);
+calculator.div(4,2);
+calculator.squ(4,2);
