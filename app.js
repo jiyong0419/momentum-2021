@@ -10,3 +10,4 @@ if (isNaN(age)) {
 }else {
     console.log("Maybe you must stop to drink this");
 }
+is()
