@@ -1,8 +1,7 @@
-const onlyFirstTitle = document.querySelector(".hello h1");
-onlyFirstTitle.innerText="first"
+const firstTitle = document.querySelector(".hello h1")
+firstTitle.addEventListener("click",handleTitleClick)
 
-const onlyLastTitle = document.querySelector(".hello:nth-child(3) h1");
-onlyLastTitle.innerText="last"
-
-const allTitle = document.querySelectorAll(".hello h1")
-console.log(allTitle[1].innerText="all")
+function handleTitleClick(){
+    firstTitle.style.color="blue"
+}
+console.dir(firstTitle)
