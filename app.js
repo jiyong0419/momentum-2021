@@ -1,6 +1,8 @@
-const title = document.getElementById("title")
+const onlyFirstTitle = document.querySelector(".hello h1");
+onlyFirstTitle.innerText="first"
 
-title.innerText = "Got you!"
+const onlyLastTitle = document.querySelector(".hello:nth-child(3) h1");
+onlyLastTitle.innerText="last"
 
-console.log(title.id);
-console.log(title.className);
+const allTitle = document.querySelectorAll(".hello h1")
+console.log(allTitle[1].innerText="all")
