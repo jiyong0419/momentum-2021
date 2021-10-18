@@ -1,12 +1,6 @@
-const h1 = document.querySelector(".hello h1")
+const h1 = document.querySelector(".hello:nth-child(2) h1")
 
-function handleTitleClick(){
-    const clickedClass="active"
-    if (h1.className===clickedClass){
-      h1.className="";
-    }else {
-      h1.className=clickedClass;
-  }
+function changeColor(){
+    h1.classList.toggle("clicked")
 }
-
-h1.addEventListener("click",handleTitleClick)
+h1.addEventListener("click",changeColor)
