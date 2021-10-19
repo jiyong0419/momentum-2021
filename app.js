@@ -1,6 +1,7 @@
-const h1 = document.querySelector(".hello:nth-child(2) h1")
-
-function changeColor(){
-    h1.classList.toggle("clicked")
+const loginInput = document.querySelector("#login-form input")
+const loginButton = document.querySelector("#login-form button")
+function onLoginBtnClick(){
+    console.log("hello "+loginInput.value);
 }
-h1.addEventListener("click",changeColor)
+loginButton.addEventListener("click",onLoginBtnClick)
+    
