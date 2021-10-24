@@ -52,4 +52,5 @@ function quoteAuthor(){
     author.innerText = todaysQuote.author;
 }
 quoteAuthor();
-setInterval(quoteAuthor,1000)
+setInterval(quoteAuthor,60000)
+
